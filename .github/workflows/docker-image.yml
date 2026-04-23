@@ -27,7 +27,7 @@ jobs:
           
 
       - name: Install yq
-        uses: mikefarah/yq@4.44.3
+        uses: mikefarah/yq@v4.44.3
 
       - name: Update Deployment.yaml with latest docker tag
         run: |
