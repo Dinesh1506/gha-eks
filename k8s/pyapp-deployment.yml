@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: pyapp
-          image: dinesh15061995/gha-pyapp:368c186
+          image: dinesh15061995/gha-pyapp:6d7e2ac
           ports:
             - containerPort: 8000
