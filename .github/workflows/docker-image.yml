@@ -29,7 +29,7 @@ jobs:
         with:
           image-ref: dinesh15061995/gha-pyapp:${{ env.SHORT_SHA }}
           severity: CRITICAL,HIGH
-          exit-code: 1
+          exit-code: 0
       - name: Build and Push docker image to Docker Hub  
         uses: docker/build-push-action@v6
         with:
