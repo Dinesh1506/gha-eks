@@ -23,11 +23,11 @@ jobs:
         with:
           context: .
           push: true
-          tags: dinesh15061995/gha-pyapp:${{ env.SHORT_SHA }}
+          tags: "dinesh15061995/gha-pyapp:${{ env.SHORT_SHA }}"
+          
+
       - name: Install yq
-        run: |
-          sudo wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/bin/yq
-          sudo chmod +x /usr/bin/yq
+        uses: mikefarah/yq@4.44.3
 
       - name: Update Deployment.yaml with latest docker tag
         run: |
